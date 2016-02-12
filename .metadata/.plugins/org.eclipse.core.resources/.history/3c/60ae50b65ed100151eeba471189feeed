@@ -1,0 +1,17 @@
+public class Main {
+	public static void main(String[] args) {
+		MachineGun<String> machineGun = new MachineGun<String>(1.0, 1.0, "qq", Producer.BERETTA);
+		Handgun handgun = new Handgun(2.0, 2.0, 5, Producer.ISRAEL);
+		Stick stick = new Stick(4.0, 5.6, 3.8, Producer.MAUSER);
+		Weapon w = new Handgun();
+		System.out.println(machineGun);
+		System.out.println(handgun);
+		System.out.println(stick);
+		machineGun.bit();
+		Stick st = new Stick();
+		st.setProducer(Producer.ISRAEL);
+		System.out.println(st);
+		System.out.println("111222111");
+		System.out.println("111111111");
+	}
+}

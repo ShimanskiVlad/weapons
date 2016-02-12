@@ -1,0 +1,40 @@
+
+public class Handgun {
+
+	private int version;
+	
+	public Handgun() {
+		version = 0;
+	}
+
+	public Handgun(Double damage, Double size, int version, Producer producer) {
+		super(damage, size, producer);
+		this.version = version;
+	}
+	
+	public int getVersion() {
+		return version;
+	}
+
+	public void setVersion(int version) {
+		this.version = version;
+	}	
+	
+	@Override
+	public String toString() {
+		return "Handgun [version=" + version + ", damage=" + damage + ", size="
+				+ size + ", producer=" + producer + "]";
+	}
+
+	@Override
+	public void shoot() {
+		System.out.println("Shoot from Handgun!");		
+	}
+
+	
+	@Override
+	public Double bit() {
+		System.out.println("Bit by HandGun!");
+		return super.bit();
+	}
+}
